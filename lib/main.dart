@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:pm25/air_detail.dart';
-import 'air_quality_page.dart';
 
 void main() {
-  runApp(MaterialApp(
-    //home: AirQualityPage(),
-    home: AQICardPage(),
-  ));
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
+      ),
+      home: AQICardPage(),
+    ),
+  );
 }

@@ -176,6 +176,7 @@ class _AQICardPageState extends State<AQICardPage> {
     final level = getAQILevel(aqi);
 
     final Color levelColor = level["color"] as Color;
+    
     return Scaffold(
       appBar: AppBar(
         title: Text(station?["areaTH"]?.toString() ?? "Rtarf (AQI)"),
